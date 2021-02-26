@@ -1,12 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=muli&display=swap');
-
-
-* {
-    box-sizing: border-box;
-}
 
 
 section {
+    box-sizing: border-box;
     margin: 0;
     padding-top: 30px;
     align-items: center;
@@ -16,6 +11,20 @@ section {
     display: flex;
 }
 
+/*span {
+    opacity: 1;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  display: inline-block;
+}
+
+span.fade {
+     opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+} */
 .container {
     display: flex;
     width: 90vw;
@@ -26,10 +35,11 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     height: 80vh;
+    border: 2px solid #000;
     border-radius: 50px;
     color: #000;
     cursor: pointer;
-    flex: 0.5;
+    flex: 0.5;                /* i set thr flex property to 0.5 since i am using flex box, so the panel active is set to 5 */
     margin: 10px;
     position: relative;
     transition: flex 0.7s ease-in;
@@ -53,12 +63,31 @@ section {
     transition: opacity 0.3s ease-in 0.4s;
 }
 
+
+.panel h2 {
+     font-size: 35px;
+     font-style: italic;
+     color:#fff;
+     position: absolute;
+     top:20px;
+     text-transform: uppercase;  
+ }
+
+ .panel p {
+     font-size: 20px;
+     font-style: italic;
+     color:#fff;
+     position: absolute;
+     text-align: center;
+     padding: 50px;
+ }
+
 @media (max-width: 480px) {
     .container {
         width: 100vw;
     }
 
-    .panel:nth-of-type(4),.panel:nth-of-type(5) {
+    .panel:nth-of-type(1),.panel:nth-of-type(5) {
         display: none;
     }
 }
