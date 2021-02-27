@@ -19,25 +19,33 @@ const panels = document.querySelectorAll('.panel');
  const text = document.querySelector('.fill');
  const strText = text.textContent;
  const splitText = strText.split('');
-text.textContent = '';
+text.textContent = ''; 
  for (let i = 0; i < splitText.length; i++) {
      text.innerHTML += '<span>' + splitText[i] + '</span>';
+
+    /* const letters = text.querySelectorAll('span');
+ for (let x = 0; x < letters.length; x++) {
+     span.classList.remove('fade');
+ } */
  }
-  
-/* let char = 0;
+
+ 
+ let char = 0;
  let timer = setInterval(onTick, 100);
 
  function onTick() {
      const span = text.querySelectorAll('span')[char];
      span.classList.add('fade');
      char++
-     if(char === splitText.length) {
+     if (char == splitText.length) {
          complete();
          return;
+    
      }
+
  }
 
  function complete() {
     clearInterval(timer);
     timer = null;
- } */
+   }  

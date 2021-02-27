@@ -9,22 +9,24 @@ section {
     background-color:#fff;
     height: 100%;
     display: flex;
+    background-color: #000;
+    border: 3px solid rgb(8, 250, 189);
 }
 
-/*span {
-    opacity: 1;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  -webkit-transform: translateY(-100px);
-          transform: translateY(-100px);
-  display: inline-block;
+.navbar {
+    background-color: #000;
+    
 }
 
-span.fade {
-     opacity: 1;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-} */
+.nav-link {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+    color: rgb(20, 238, 13);
+}
+
 .container {
     display: flex;
     width: 90vw;
@@ -35,7 +37,7 @@ span.fade {
     background-position: center;
     background-repeat: no-repeat;
     height: 80vh;
-    border: 2px solid #000;
+    border: 2px solid rgb(20, 238, 13);
     border-radius: 50px;
     color: #000;
     cursor: pointer;
