@@ -40,9 +40,8 @@ text.textContent = '';
      if (char == splitText.length) {
          complete();
          return;
-    
      }
-
+    
  }
 
  function complete() {

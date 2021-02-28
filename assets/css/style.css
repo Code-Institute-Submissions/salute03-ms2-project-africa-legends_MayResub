@@ -3,28 +3,31 @@
 section {
     box-sizing: border-box;
     margin: 0;
-    padding-top: 30px;
+    padding-top: 5rem;
     align-items: center;
     overflow: hidden;
-    background-color:#fff;
     height: 100%;
     display: flex;
-    background-color: #000;
-    border: 3px solid rgb(8, 250, 189);
+    background-color: rgb(243, 240, 216);
+   
 }
 
 .navbar {
-    background-color: #000;
+    background-color: rgb(39, 36, 36);
     
 }
 
 .nav-link {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 15px;
     font-weight: bold;
     text-transform: uppercase;
     font-style: italic;
-    color: rgb(20, 238, 13);
+    color: rgb(239, 240, 239);
+}
+
+.nav-link:hover {
+    color: #000;
 }
 
 .container {
@@ -37,9 +40,9 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     height: 80vh;
-    border: 2px solid rgb(20, 238, 13);
+    border: 2px solid rgb(3, 3, 3);
     border-radius: 50px;
-    color: #000;
+    color: #fff;
     cursor: pointer;
     flex: 0.5;                /* i set thr flex property to 0.5 since i am using flex box, so the panel active is set to 5 */
     margin: 10px;
@@ -79,7 +82,7 @@ section {
      font-size: 20px;
      font-style: italic;
      color:#fff;
-     position: absolute;
+     position: relative;
      text-align: center;
      padding: 50px;
  }
@@ -93,3 +96,40 @@ section {
         display: none;
     }
 }
+
+footer {
+   padding-bottom: 20px;
+   margin: 0;
+   display: inline-flex;
+   height: 100%;
+   width: 100%;
+   background-color: rgb(51, 49, 49);
+}
+.social-links {
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+}
+.social-links li {
+    display: inline;
+}
+
+.social-links i {
+    font-size: 20px;
+    margin-left: 50px;
+    padding-top: 30px;
+    color: #fff;
+}
+.social-links i:hover {
+    color: #000;
+}
+
+.copywrite p {
+    font-size: 20px;
+    padding-top: 20px;
+    margin-left: 50px;
+    color: #fff;
+}
+
+
+
