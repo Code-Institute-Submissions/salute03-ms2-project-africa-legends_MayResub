@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 
 section {
    justify-content: center;
@@ -11,17 +11,19 @@ section {
    
 } 
 
+.fill {
+    font-family: 'Redressed', cursive;
+    text-transform: uppercase;
+}
 .navbar {
     background-color: rgb(39, 36, 36);
-    
+    padding-bottom: 20px;
 }
 
 .nav-link {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Redressed', cursive;
     font-size: 15px;
-    font-weight: bold;
     text-transform: uppercase;
-    font-style: italic;
     color: rgb(239, 240, 239);
 }
 
@@ -31,6 +33,7 @@ section {
 
 .panel-pictures {
     display: flex;
+   
 }
 
 
@@ -68,24 +71,6 @@ section {
 }
 
 
-.panel h2 {
-     font-size: 35px;
-     font-style: italic;
-     color:#fff;
-     position: absolute;
-     top:20px;
-     text-transform: uppercase;  
- }
-
- .panel p {
-     font-size: 20px;
-     font-style: italic;
-     color:#fff;
-     position: relative;
-     text-align: center;
-     padding: 50px;
- }
-
 @media (max-width: 480px) {
     .container {
         width: 100vw;
@@ -95,6 +80,46 @@ section {
         display: none;
     }
 }
+
+
+.fela {
+    background-color: rgb(170, 1, 66);
+}
+
+.lucky {
+    background-color: rgb(225, 113, 240);
+}
+
+.anjelik {
+    background-color: rgb(82, 50, 224);
+}
+
+.about-fela,
+.about-lucky,
+.about-anjelik {
+padding-top: 10px;
+}
+
+.about-fela h2,
+.about-lucky h2,
+.about-anjelik h2 {
+    text-align: center;
+    font-family: 'Akaya Telivigala', cursive;
+    font-weight: bold;
+}
+
+.about-fela p,
+.about-lucky p,
+.about-anjelik p {
+    font-family: 'Dancing Script', cursive;
+}
+
+.btn-light {
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+}
+
 
 footer {
    padding: 0.6rem;
@@ -134,7 +159,5 @@ footer {
 }
 
 
-@media (max-width: 480px) {
-    
-}
+
 
