@@ -1,16 +1,15 @@
 
 
 section {
-    box-sizing: border-box;
+   justify-content: center;
     margin: 0;
     padding-top: 5rem;
     align-items: center;
     overflow: hidden;
     height: 100%;
-    display: flex;
     background-color: rgb(243, 240, 216);
    
-}
+} 
 
 .navbar {
     background-color: rgb(39, 36, 36);
@@ -30,10 +29,10 @@ section {
     color: #000;
 }
 
-.container {
+.panel-pictures {
     display: flex;
-    width: 90vw;
 }
+
 
 .panel {
     background-size: auto 100%;
@@ -98,16 +97,22 @@ section {
 }
 
 footer {
-   padding-bottom: 20px;
-   margin: 0;
-   display: inline-flex;
-   height: 100%;
-   width: 100%;
-   background-color: rgb(51, 49, 49);
+   padding: 0.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 6vh;
+  background-color: rgb(51, 48, 48);
 }
+
 .social-links {
-    position: absolute;
-    right: 0;
+    
     padding-right: 10px;
 }
 .social-links li {
@@ -117,19 +122,19 @@ footer {
 .social-links i {
     font-size: 20px;
     margin-left: 50px;
-    padding-top: 30px;
     color: #fff;
 }
 .social-links i:hover {
     color: #000;
 }
 
-.copywrite p {
+.copyright  {
     font-size: 20px;
-    padding-top: 20px;
-    margin-left: 50px;
     color: #fff;
 }
 
 
+@media (max-width: 480px) {
+    
+}
 
