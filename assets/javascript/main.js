@@ -80,3 +80,33 @@ text.textContent = '';
                  {imagePath:"https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",}); 
           }
        
+
+
+          //sendEmail.js//
+          
+
+          let sendMail = function(form) {
+    emailjs.send("service_p4u06kn", "Africa-legends", {
+                  "from_name": form.name.value,
+                  "from_email": form.emailaddress.value,
+                   "get_in_touch": form.getintouch.value
+        })
+    .then(
+        function(response) {
+            console.log("SUCCES", response);
+            alert("Your message has been sent successfully");
+            document.getElementById('form').reset();
+        },
+        function(error) {
+            console.log("FAILED", error);
+            alert("Message was not sent");
+            document.getElementById('form').reset();
+        });
+    return false;
+};
+
+     async function init() {
+    await sendMail();
+}
+
+init();

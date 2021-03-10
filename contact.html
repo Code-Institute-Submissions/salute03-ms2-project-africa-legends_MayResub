@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+   <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_nGWlXpKmWZotn9KxMRxzc");
+   })();
+</script>
 </head>
 <body>
     <!------------------------------------------Navbars-->
@@ -31,22 +39,20 @@
     <section>
        <div class="container">
         <div class="row">
-          <div class="col-lg-6 contact-form text-wrapper">
+          <div class="col-lg-6 contact-form">
             <div class="form-header">
               <h3 class="color">Wanna know more?</h3>
               <h5 class="color">Get in touch!</h5>
             </div>
-            <form id="formContact" onsubmit="return sendMail(this);">
-              <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required="">
-              <input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required="">
-              <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" required=""></textarea>
-              <button type="submit" class="btn btn-outline-primary color">
-                Submit
-              </button>
-            </form>
+             <form id="form" onsubmit="return sendMail(this);">
+                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                    <textarea rows="5" name="getintouch" class="form-control" id="getintouch" placeholder="Get-in-Touch" required></textarea>
+                    <button type="submit" class="btn btn-secondary center-block">Submit</button>
+                </form>
           </div>
         </div>
-          <div class="col-lg-6 contact-map text-wrapper">
+          <div class="col-lg-6 contact-map">
             <h3 class="color">I'm located in the liberties area of Dublin</h3>
             <div id="map"></div>
           </div>

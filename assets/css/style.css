@@ -158,6 +158,11 @@ footer {
     color: #fff;
 }
 
+/*----- map*/
 
+div#map {
+    min-height: 360px;
+}
 
+/*-------contact*/
 
