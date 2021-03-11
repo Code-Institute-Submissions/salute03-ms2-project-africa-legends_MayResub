@@ -55,17 +55,17 @@ text.textContent = '';
             var map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 3,
                 center: {
-                    lat: 46.619261,
-                    lng: -33.134766
+                    lat: 9.1021, 
+                    lng: 18.2812
                 }
             });
 
            var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
             var locations = [
-                {lat: 40.785091, lng: -73.968285},
-                {lat: 41.084045, lng: -73.874245},
-                {lat: 40.754932, lng: -73.984016}
+                {lat: 9.0820, lng: 8.6753}, 
+                {lat: 9.3077, lng: 2.3158},
+                {lat: 30.5595, lng:  22.9375}
             ];
 
             var markers = locations.map(function(location, i) {
@@ -86,11 +86,11 @@ text.textContent = '';
           
 
           let sendMail = function(form) {
-    emailjs.send("service_p4u06kn", "Africa-legends", {
+    emailjs.send("service_2x6jexf", "Africa-legends", {
+                  "get_in_touch": form.getintouch.value,
                   "from_name": form.name.value,
-                  "from_email": form.emailaddress.value,
-                   "get_in_touch": form.getintouch.value
-        })
+                  "from_email": form.emailaddress.value 
+  })
     .then(
         function(response) {
             console.log("SUCCES", response);
@@ -105,8 +105,4 @@ text.textContent = '';
     return false;
 };
 
-     async function init() {
-    await sendMail();
-}
-
-init();
+  
