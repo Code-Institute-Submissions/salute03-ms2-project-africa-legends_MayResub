@@ -32,6 +32,10 @@ section {
     color: #000;
 }
 
+.fa-bars {
+    color: rgb(243, 240, 216);
+}
+
 .panel-pictures {
     display: flex;
    
@@ -166,9 +170,43 @@ footer {
 
 div#map {
     min-height: 360px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.locate {
+    margin-bottom: 3rem;
 }
 
 /*-------contact*/
 
+.contact {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+}
 
 
+#form {
+  margin-top: 20px;
+ }
+
+ #form>input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+ 
+ }
+
+ #form>textarea {
+  
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+ }
+
+
+ @media (max-width: 480px) {
+     .locate {
+         margin-top: 3rem;
+     }
+ }

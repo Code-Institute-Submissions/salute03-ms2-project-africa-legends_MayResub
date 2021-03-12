@@ -36,10 +36,10 @@ text.textContent = '';
          return;
      }
 
-     const letters = text.querySelectorAll('span');
+   /*  const letters = text.querySelectorAll('span');
  for (let x = 0; x < letters.length; x++) {
      span.classList.remove('fade');
- } 
+ } */
     
  } 
 
@@ -63,9 +63,9 @@ text.textContent = '';
            var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
             var locations = [
-                {lat: 9.0820, lng: 8.6753}, 
-                {lat: 9.3077, lng: 2.3158},
-                {lat: 30.5595, lng:  22.9375}
+                {lat: 7.1475, lng: 3.3619}, 
+                {lat: 6.3716, lng: 2.0763},
+                {lat: 52.2789, lng:  5.6658}
             ];
 
             var markers = locations.map(function(location, i) {
