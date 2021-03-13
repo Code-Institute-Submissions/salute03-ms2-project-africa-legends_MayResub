@@ -47,7 +47,7 @@ Africa Musical Legends is a Milestone 2 project, it is part of the Fullstack WEb
  
 ## Project Overview
 
-This is a front-end web page for an outdoor fitness trainer based in Lagos Nigeria, Pelumi.  Pelumi is setting up his own business providing a range of personal training, group workouts and using sport as a mode of training.
+This is a front-end web page for a history magazine/blog.  Pelumi is setting up his own business providing a range of personal training, group workouts and using sport as a mode of training.
 
 
 He wanted a website that showcases what he offers to his clients and potential clients, how he can help his clients benefit from having a personal trainer, importance of yoga and how it greatly improves more than just flexibility & having fun.  

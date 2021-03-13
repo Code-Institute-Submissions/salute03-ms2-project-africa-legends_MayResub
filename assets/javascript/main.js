@@ -16,7 +16,8 @@ const panels = document.querySelectorAll('.panel');
      });
  }
 
- const text = document.querySelector('.fill');
+ //this code is for nav header animation but the code didnt work and i was running out of time for this project, so i left it and i will come back to it after the project it markered.//
+/* const text = document.querySelector('.fill');
  const strText = text.textContent;
  const splitText = strText.split('');
 text.textContent = ''; 
@@ -36,17 +37,17 @@ text.textContent = '';
          return;
      }
 
-   /*  const letters = text.querySelectorAll('span');
+     const letters = text.querySelectorAll('span');
  for (let x = 0; x < letters.length; x++) {
      span.classList.remove('fade');
- } */
+ } 
     
  } 
 
  function complete() {
     clearInterval(timer);
     timer = null;
-   }  
+   }  */
 
 
    // map js 
