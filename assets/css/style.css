@@ -1,15 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 
-/*section {
-   justify-content: center;
+main {
+    padding: 0;
     margin: 0;
-    padding-top: 5rem;
-    align-items: center;
     overflow: hidden;
-    height: 100%;
-    background-color: rgb(243, 240, 216);
-   
-} */
+} 
 
 .fill {
     font-family: 'Redressed', cursive;
@@ -37,22 +32,27 @@
 }
 
 
-.container-fluid {
+.wrapper {
     background: linear-gradient(90deg, rgba(8,11,119,1) 25%, rgba(68,25,101,1) 45%, rgba(92,5,48,1) 100%);
     height: 100vh;
     padding: 0;
     margin: 0;
 }
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
 .container-story {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     top: 30%;
-    left: 40%;
-
+    left: 37%;
     width: 400px;
-    height: 300px;
+    height: 400px;
     background: rgba(255, 255, 255, 0.1);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.3);
@@ -76,6 +76,8 @@
 
 .uppercase{
     text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
 }
 
 
@@ -112,8 +114,8 @@
 
 .square-1 {
     position: absolute;
-    left: 52%;
-    top: 25%;
+    left: 55%;
+    top: 22%;
     transform-origin: center;
     background: rgb(228, 111, 228);
     opacity: 0;
@@ -136,7 +138,7 @@
 .square-2 {
     position: absolute;
     left: 38%;
-    top: 45%;
+    top: 73%;
     transform-origin: center;
     background: rgb(72, 93, 218);
     opacity: 0;
@@ -156,12 +158,20 @@
     }
 }
 
-
+.history {
+    text-align: center;
+    background: linear-gradient(203deg, rgba(63,88,230,1) 12%, rgba(63,94,251,1) 55%, rgba(59,44,77,1) 100%);
+    color: rgb(3, 3, 3);
+    font-size: large;
+}
 
 .panel-pictures {
     display: flex;
 }
 
+.pics {
+    background: linear-gradient(90deg, rgba(221,230,172,1) 0%, rgba(191,221,186,1) 100%);
+}
 .panel {
     background-size: auto 100%;
     background-position: center;
@@ -195,58 +205,79 @@
     transition: opacity 0.3s ease-in 0.4s;
 }
 
+.legend-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #fff;
+    border-left: 1px solid;
+   }
+  
+   .legend-item::before {
+    content: attr(title);
+    position: absolute;
+    left: 2em;
+    top: 2.3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 800;
+    font-size: 1em;
+    padding: 0;
+    color: #fff;
+   }
+  
+   .legend-item::after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #fff;
+   }
+   
+   .musical-image {
+        background: url("../images/africamapss.jpg") no-repeat;
+        background-size: cover;
+        padding: 0;
+   }
+
+   .section-column {
+       padding-left: 30px;
+       background: #000;
+   }
+
+/*--------------------------------------------------------------- media quaries */
 
 @media (max-width: 480px) {
-    .container {
-        width: 100vw;
-    }
-
     .panel:nth-of-type(1),.panel:nth-of-type(5) {
         display: none;
     }
 }
 
+@media (max-width: 480px) {
+     .container-story {
+         width: 300px;
+         height: 300px;
+        top: 40%;
+        left: 10%;
+     }
 
-.fela {
-    background-color: rgb(170, 1, 66);
-}
+     .square-1 {
+         width: 70px;
+         height: 70px;
+         top: 35%;
+         left: 60%;
+     }
 
-.lucky {
-    background-color: rgb(225, 113, 240);
-}
-
-.anjelik {
-    background-color: rgb(82, 50, 224);
-}
-
-.container-fluid {
-    padding: 20px;
-}
-.about-fela,
-.about-lucky,
-.about-anjelik {
-padding-top: 10px;
-}
-
-.about-fela h2,
-.about-lucky h2,
-.about-anjelik h2 {
-    text-align: center;
-    font-family: 'Akaya Telivigala', cursive;
-    font-weight: bold;
+     .square-2 {
+         width: 70px;
+         height: 70px;
+         left: 30%;
+     }
 }
 
-.about-fela p,
-.about-lucky p,
-.about-anjelik p {
-    font-family: 'Dancing Script', cursive;
-}
-
-.btn-light {
-    background-color: #000;
-    color: #fff;
-    border-radius: 20px;
-}
 
 
 footer {
