@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+(function(){
+ emailjs.init("user_nGWlXpKmWZotn9KxMRxzc");
+})();
+</script>
 </head>
 <body>
     <!------------------------------------------Navbars-->
@@ -132,9 +138,57 @@
          
 
         <div class="container-fluid">
-          <h2 class="uppercase">contact.</h2>
+          <h2 class="uppercase">map.</h2>
         </div>
+        
+        
+           <div class="container">
+              <h3 class="locate">Locate Africa Musical Legends on the Map</h3>
+               <!-- Location finder with Google Maps -->
 
+
+            <div id = "map-image" class="container-search">
+              <div id="centersearch">
+
+                  <!-- Search box for entering a location -->
+
+                  <div class="enter" id="locationField">
+                      <input class="enter1" id="autocomplete" placeholder="Enter a location" type="text" />
+                  </div>
+                  
+                  <!-- Controls for selecting a country -->
+                  
+                  <div class="enter" id="controls">
+                      <select class="enter1" id="country">
+                          <option value = "all" selected>All</option>
+                          <option value = "nig">fela-anikulapo kuti</option>
+                          <option value = "ben">Angélique Kidjo</option>
+                          <option value = "sa">Lucky Dube</option>
+                      </select>
+                  </div>
+              </div>
+
+          </div>
+              <div id="map"></div>
+          </div>
+
+            <div class="container-fluid">
+              <h2 class="uppercase">contact.</h2>
+            </div>
+            
+             <div class="container contact-form">
+               <div class="form-header">
+                 <h3 class="color">Wanna know more?</h3>
+                 <h5 class="color">Get in touch!</h5>
+               </div>
+                <form id="form" onsubmit="return sendMail(this);">
+                       <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                       <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                       <textarea rows="5" name="getintouch" class="form-control" id="getintouch" placeholder="Get-in-Touch" required></textarea>
+                       <button type="submit" class="btn btn-secondary center-block">Submit</button>
+                </form>
+             </div>
+         
     </main>
 
    <footer>
@@ -172,6 +226,8 @@
                   </div>
       
     </footer>
+      <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzoWq0xf8QU7nt4LfG52lqhQeWiSJFMlA&callback=initMap"></script>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

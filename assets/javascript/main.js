@@ -16,39 +16,7 @@ const panels = document.querySelectorAll('.panel');
      });
  }
 
- //this code is for nav header animation but the code didnt work and i was running out of time for this project, so i left it and i will come back to it after the project it markered.//
-/* const text = document.querySelector('.fill');
- const strText = text.textContent;
- const splitText = strText.split('');
-text.textContent = ''; 
- for (let i = 0; i < splitText.length; i++) {
-     text.innerHTML += '<span>' + splitText[i] + '</span>';
- }
-
- let char = 0;
- let timer = setInterval(onTick, 100);
-
- function onTick() {
-     const span = text.querySelectorAll('span')[char];
-     span.classList.add('fade');
-     char++
-     if (char == splitText.length) {
-         complete();
-         return;
-     }
-
-     const letters = text.querySelectorAll('span');
- for (let x = 0; x < letters.length; x++) {
-     span.classList.remove('fade');
- } 
-    
- } 
-
- function complete() {
-    clearInterval(timer);
-    timer = null;
-   }  */
-
+ 
 
    // map js 
 

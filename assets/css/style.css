@@ -4,6 +4,7 @@ main {
     padding: 0;
     margin: 0;
     overflow: hidden;
+    background: rgb(51, 48, 48);
 } 
 
 .fill {
@@ -78,6 +79,7 @@ main {
     text-transform: uppercase;
     text-align: center;
     padding-top: 20px;
+    color: #fff;
 }
 
 
@@ -292,9 +294,8 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   min-height: 6vh;
-  background-color: rgb(51, 48, 48);
+  background-color: #000;
 }
-
 .social-links {
     
     padding-right: 10px;
@@ -319,23 +320,30 @@ footer {
 
 /*----- map*/
 
-div#map {
-    min-height: 360px;
-    border: 1px solid #000;
-    border-radius: 10px;
+#map {
+   width: 100%;
+   height: 400px;
+   border: 2px solid #fff;
+   border-radius: 15px;
 }
 
-.locate {
-    margin-bottom: 3rem;
+.locate,
+.color {
+    align-content: center;
+        color: #fff;
+        padding-bottom: 20px;
 }
 
-/*-------contact*/
-
-.contact {
-    padding-top: 15rem;
-    padding-bottom: 15rem;
+.enter {
+    padding-bottom: 15px;
+    padding-left: 50px;
 }
 
+/*--------------------------------contact*/
+
+.contact-form {
+    align-items: center;
+}
 
 #form {
   margin-top: 20px;
@@ -356,8 +364,4 @@ div#map {
  }
 
 
- @media (max-width: 480px) {
-     .locate {
-         margin-top: 3rem;
-     }
- }
+ 
