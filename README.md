@@ -1,11 +1,11 @@
-# Africa Musical Legends
+# African Legends
 
 ### [Live Site](https://salute03.github.io/ms2-project-africa-legends/)
 
 ![Various Devices](https://salute03.github.io/ms2-project-africa-legends/assets/images/fela/responsive.jpg.png)
 
 
-Africa Musical Legends is a Milestone 2 project, it is part of the Fullstack WEb Development Course of [Code Institute](https://codeinstitute.net/).
+African Legends is a Milestone 2 project, it is part of the Fullstack WEb Development Course of [Code Institute](https://codeinstitute.net/).
 
 ## Project Overview
 
