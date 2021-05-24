@@ -58,15 +58,14 @@ main {
     left: 37%;
     width: 400px;
     height: 400px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.5);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.3);
     border-right: 1px solid rgba(255, 255, 255, 0.3);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-
-    backdrop-filter: blur(40px);
     box-shadow: 0 26px 42px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    
     animation: move 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 

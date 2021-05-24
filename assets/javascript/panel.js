@@ -5,7 +5,7 @@ const panels = document.querySelectorAll('.panel');
  panels.forEach(panel => {
       // () => is the same as function()
     panel.addEventListener('click', function(){
-        removeActiveClass()
+        removeActiveClass();
         panel.classList.add('active')
     });
  });
