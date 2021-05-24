@@ -2,7 +2,7 @@
 
 ### [Live Site](https://salute03.github.io/ms2-project-africa-legends/)
 
-![Various Devices](https://salute03.github.io/ms2-project-africa-legends/assets/images/fela/afrikan.jpg.png)
+![Various Devices](https://salute03.github.io/ms2-project-africa-legends/assets/images/fela/responsive.jpg.png)
 
 
 Africa Musical Legends is a Milestone 2 project, it is part of the Fullstack WEb Development Course of [Code Institute](https://codeinstitute.net/).
@@ -55,19 +55,15 @@ This section displays a form for sending emails for requests for projects.
 5.**Lighthouse** A number of issues were resolved using lighthouse. I used lighthouse to determine the rate of performance, accessibility, best practice and SEO.
 6.**W3C HTML Validator**(https://validator.w3.org/) Used to identify HTML errors. few errors were identified, which has to do with the modal form.
 7.**W3C CSS Validator**(https://jigsaw.w3.org/css-validator/) Used to identify CSS errors.
-
-### testing image
-[light house](assets/images/test.jpg)
-[validator](asstes/images/test2.jpg)
+8. **JSHint** All Javascript and jQuery code on the website has been tested in JSHint
 
 ### Manual Testing
 
 1.Expectation 
-* The navbar brand is should link back to the home page from any part of the webpages.
+* The header should reload or return back to top page when clicked.
 * The navlinks should open the pages linked to.
-* The sign up button should display a sign up form.
-* The images in the gallery should open in another page.
-* The dumbell should open the gallery.
+* contact form shouuld send email to my oluwasegunogunsakin@gmail.com
+* The panels opens each picture one per click and closes it when another one is clicked
 * The armburger button should display the menu in the mobile platform.
 
 2.Testing
@@ -97,6 +93,13 @@ I used pen and paper for the wireframes.
    https://fontawesome.com/icons
 8. **Google Font:** Roboto Font family was used throughout the project.
    https://fonts.google.com/
+9. **Javascript**(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js)
+    **Javascript** was used to put Google Maps on the website and to send emails for a project request using the contact form.
+10. **EmailJS**(http://www.emailjs.com/)
+    **EmailJS** is an application that was used to add an email template for sending emails via the contact form.
+    EmailJS is an aplication that allows users to send emails directly from Javascript.
+11. **Maps Javascript API**(https://developers.google.com/maps/documentation/javascript/tutorial)
+    **Maps Javascript API** is a library that was used in order to add a map on the page and customize it.
 
 ## 6. Development Cycle
 
