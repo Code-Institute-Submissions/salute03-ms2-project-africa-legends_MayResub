@@ -25,7 +25,11 @@ main {
 }
 
 .nav-link:hover {
-    color: #000;
+    color: rgb(205, 30, 221);
+}
+
+.fill:hover {
+    color:rgb(109, 194, 228);
 }
 
 .fa-bars {
@@ -140,7 +144,7 @@ main {
 .square-2 {
     position: absolute;
     left: 38%;
-    top: 73%;
+    top: 68%;
     transform-origin: center;
     background: rgb(72, 93, 218);
     opacity: 0;
@@ -172,7 +176,7 @@ main {
 }
 
 .pics {
-    background: linear-gradient(90deg, rgba(221,230,172,1) 0%, rgba(191,221,186,1) 100%);
+    background: linear-gradient(90deg, rgba(17,223,68,1) 25%, rgba(20,210,218,1) 45%, rgba(61,56,215,1) 100%);
 }
 .panel {
     background-size: auto 100%;
@@ -182,6 +186,7 @@ main {
     border: 2px solid rgb(3, 3, 3);
     border-radius: 50px;
     color: #fff;
+    text-transform: uppercase;
     cursor: pointer;
     flex: 0.5;                /* i set thr flex property to 0.5 since i am using flex box, so the panel active is set to 5 */
     margin: 10px;
@@ -253,7 +258,7 @@ main {
 /*--------------------------------------------------------------- media quaries */
 
 @media (max-width: 480px) {
-    .panel:nth-of-type(1),.panel:nth-of-type(5) {
+    .panel:nth-of-type(4),.panel:nth-of-type(5) {
         display: none;
     }
 }
@@ -277,6 +282,7 @@ main {
          width: 70px;
          height: 70px;
          left: 30%;
+         top: 80%;
      }
 }
 
